@@ -37,6 +37,7 @@ __author__ = "mferguson@willowgarage.com (Michael Ferguson)"
 
 import roslib;
 import rospy
+import imp
 
 import thread
 import multiprocessing
@@ -56,14 +57,10 @@ import signal
 
 def load_pkg_module(package, directory):
     #check if its in the python path
-    in_path = False
     path = sys.path
-    pkg_src = package+'/src' #check for the source directory which
-                             # is added to path by roslib boostrapping
-    for entry in sys.path:
-        if pkg_src in entry:
-            in_path = True
-    if not in_path:
+    try:
+        imp.find_module(package)
+    except:
         roslib.load_manifest(package)
     try:
         m = __import__( package + '.' + directory )
@@ -98,7 +95,7 @@ class Publisher:
         package, message = topic_info.message_type.split('/')
         self.message = load_message(package, message)
         if self.message._md5sum == topic_info.md5sum:
-            self.publisher = rospy.Publisher(self.topic, self.message)
+            self.publisher = rospy.Publisher(self.topic, self.message, queue_size=10)
         else:
             raise Exception('Checksum does not match: ' + self.message._md5sum + ',' + topic_info.md5sum)
 
@@ -333,7 +330,7 @@ class SerialClient:
         self.timeout = timeout
         self.synced = False
 
-        self.pub_diagnostics = rospy.Publisher('/diagnostics', diagnostic_msgs.msg.DiagnosticArray)
+        self.pub_diagnostics = rospy.Publisher('/diagnostics', diagnostic_msgs.msg.DiagnosticArray, queue_size=10)
 
         if port== None:
             # no port specified, listen for any new port?
