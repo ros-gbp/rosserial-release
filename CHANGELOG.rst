@@ -2,6 +2,9 @@
 Changelog for package rosserial_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.1 (2015-07-06)
+------------------
+
 0.7.0 (2015-04-23)
 ------------------
 * Fill out description field in package.xml.
