@@ -42,7 +42,6 @@ import roslib.srvs
 import roslib.message
 import rospkg
 import rospy
-import traceback
 
 import os, sys, subprocess, re
 
@@ -555,7 +554,7 @@ def get_dependency_sorted_package_list(rospack):
             if not dependent:
                 dependency_list.append(p)
         except rospkg.common.ResourceNotFound as e:
-            failed.append(p + " (missing dependency: " + e.message + ")")
+            failed.append(p + " (missing dependency)")
             print('[%s]: Unable to find dependency: %s. Messages cannot be built.\n'% (p, str(e)))
     dependency_list.reverse()
     return [dependency_list, failed]
@@ -573,15 +572,13 @@ def rosserial_generate(rospack, path, mapping):
         try:
             MakeLibrary(p, path, rospack)
         except Exception as e:
-            failed.append(p + " ("+str(e)+")")
+            failed.append(p)
             print('[%s]: Unable to build messages: %s\n' % (p, str(e)))
-            print(traceback.format_exc())
     print('\n')
     if len(failed) > 0:
         print('*** Warning, failed to generate libraries for the following packages: ***')
         for f in failed:
             print('    %s'%f)
-        raise Exception("Failed to generate libraries for: " + str(failed))
     print('\n')
 
 def rosserial_client_copy_files(rospack, path):
