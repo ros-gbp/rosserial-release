@@ -1,3 +1,33 @@
+## rosserial (indigo) - 0.6.4-0
+
+The packages in the `rosserial` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo -t indigo rosserial` on `Mon, 06 Jul 2015 13:06:38 -0000`
+
+These packages were released:
+- `rosserial`
+- `rosserial_arduino`
+- `rosserial_client`
+- `rosserial_embeddedlinux`
+- `rosserial_msgs`
+- `rosserial_python`
+- `rosserial_server`
+- `rosserial_windows`
+- `rosserial_xbee`
+
+Version of package(s) in repository `rosserial`:
+- upstream repository: https://github.com/ros-drivers/rosserial.git
+- release repository: https://github.com/ros-gbp/rosserial-release.git
+- rosdistro version: `0.6.3-0`
+- old version: `0.6.3-0`
+- new version: `0.6.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.9`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## rosserial (jade) - 0.7.1-0
 
 The packages in the `rosserial` repository were released into the `jade` distro by running `/usr/local/bin/bloom-release -r jade -t jade rosserial` on `Mon, 06 Jul 2015 12:51:53 -0000`
