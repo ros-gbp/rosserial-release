@@ -2,6 +2,13 @@
 Changelog for package rosserial_client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.1 (2015-07-06)
+------------------
+* Provide option to pass through CMake arguments in the CMAKE_COMMAND
+  invocation. The use-case is primarily specifying additional paths to
+  modules, for separately-packaged libraries.
+* Contributors: Mike Purvis
+
 0.7.0 (2015-04-23)
 ------------------
 * Initial release for Jade.
