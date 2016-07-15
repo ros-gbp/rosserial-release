@@ -42,6 +42,7 @@ import roslib.srvs
 import roslib.message
 import rospkg
 import rospy
+import traceback
 
 import os, sys, subprocess, re
 
@@ -218,7 +219,7 @@ class ArrayDataType(PrimitiveDataType):
     def make_declaration(self, f):
         c = self.cls("*"+self.name, self.type, self.bytes)
         if self.size == None:
-            f.write('      uint8_t %s_length;\n' % self.name)
+            f.write('      uint32_t %s_length;\n' % self.name)
             f.write('      %s st_%s;\n' % (self.type, self.name)) # static instance for copy
             f.write('      %s * %s;\n' % (self.type, self.name))
         else:
@@ -228,15 +229,16 @@ class ArrayDataType(PrimitiveDataType):
         c = self.cls(self.name+"[i]", self.type, self.bytes)
         if self.size == None:
             # serialize length
-            f.write('      *(outbuffer + offset++) = %s_length;\n' % self.name)
-            f.write('      *(outbuffer + offset++) = 0;\n')
-            f.write('      *(outbuffer + offset++) = 0;\n')
-            f.write('      *(outbuffer + offset++) = 0;\n')
-            f.write('      for( uint8_t i = 0; i < %s_length; i++){\n' % self.name)
+            f.write('      *(outbuffer + offset + 0) = (this->%s_length >> (8 * 0)) & 0xFF;\n' % self.name)
+            f.write('      *(outbuffer + offset + 1) = (this->%s_length >> (8 * 1)) & 0xFF;\n' % self.name)
+            f.write('      *(outbuffer + offset + 2) = (this->%s_length >> (8 * 2)) & 0xFF;\n' % self.name)
+            f.write('      *(outbuffer + offset + 3) = (this->%s_length >> (8 * 3)) & 0xFF;\n' % self.name)
+            f.write('      offset += sizeof(this->%s_length);\n' % self.name)
+            f.write('      for( uint32_t i = 0; i < %s_length; i++){\n' % self.name)
             c.serialize(f)
             f.write('      }\n')
         else:
-            f.write('      for( uint8_t i = 0; i < %d; i++){\n' % (self.size) )
+            f.write('      for( uint32_t i = 0; i < %d; i++){\n' % (self.size) )
             c.serialize(f)
             f.write('      }\n')
 
@@ -244,19 +246,22 @@ class ArrayDataType(PrimitiveDataType):
         if self.size == None:
             c = self.cls("st_"+self.name, self.type, self.bytes)
             # deserialize length
-            f.write('      uint8_t %s_lengthT = *(inbuffer + offset++);\n' % self.name)
+            f.write('      uint32_t %s_lengthT = ((uint32_t) (*(inbuffer + offset))); \n' % self.name)
+            f.write('      %s_lengthT |= ((uint32_t) (*(inbuffer + offset + 1))) << (8 * 1); \n' % self.name)
+            f.write('      %s_lengthT |= ((uint32_t) (*(inbuffer + offset + 2))) << (8 * 2); \n' % self.name)
+            f.write('      %s_lengthT |= ((uint32_t) (*(inbuffer + offset + 3))) << (8 * 3); \n' % self.name)
+            f.write('      offset += sizeof(this->%s_length);\n' % self.name)
             f.write('      if(%s_lengthT > %s_length)\n' % (self.name, self.name))
             f.write('        this->%s = (%s*)realloc(this->%s, %s_lengthT * sizeof(%s));\n' % (self.name, self.type, self.name, self.name, self.type))
-            f.write('      offset += 3;\n')
             f.write('      %s_length = %s_lengthT;\n' % (self.name, self.name))
             # copy to array
-            f.write('      for( uint8_t i = 0; i < %s_length; i++){\n' % (self.name) )
+            f.write('      for( uint32_t i = 0; i < %s_length; i++){\n' % (self.name) )
             c.deserialize(f)
             f.write('        memcpy( &(this->%s[i]), &(this->st_%s), sizeof(%s));\n' % (self.name, self.name, self.type))
             f.write('      }\n')
         else:
             c = self.cls(self.name+"[i]", self.type, self.bytes)
-            f.write('      for( uint8_t i = 0; i < %d; i++){\n' % (self.size) )
+            f.write('      for( uint32_t i = 0; i < %d; i++){\n' % (self.size) )
             c.deserialize(f)
             f.write('      }\n')
 
@@ -554,7 +559,7 @@ def get_dependency_sorted_package_list(rospack):
             if not dependent:
                 dependency_list.append(p)
         except rospkg.common.ResourceNotFound as e:
-            failed.append(p + " (missing dependency)")
+            failed.append(p + " (missing dependency: " + e.message + ")")
             print('[%s]: Unable to find dependency: %s. Messages cannot be built.\n'% (p, str(e)))
     dependency_list.reverse()
     return [dependency_list, failed]
@@ -572,13 +577,15 @@ def rosserial_generate(rospack, path, mapping):
         try:
             MakeLibrary(p, path, rospack)
         except Exception as e:
-            failed.append(p)
+            failed.append(p + " ("+str(e)+")")
             print('[%s]: Unable to build messages: %s\n' % (p, str(e)))
+            print(traceback.format_exc())
     print('\n')
     if len(failed) > 0:
         print('*** Warning, failed to generate libraries for the following packages: ***')
         for f in failed:
             print('    %s'%f)
+        raise Exception("Failed to generate libraries for: " + str(failed))
     print('\n')
 
 def rosserial_client_copy_files(rospack, path):

@@ -2,15 +2,28 @@
 Changelog for package rosserial_client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.6.4 (2015-07-06)
+0.7.2 (2016-07-15)
 ------------------
-* Provide option to pass through CMake arguments.
-* Make make_library.py error more verbose.
-* createQuaternionFromYaw made static, fixes "multiple definition" error
+* Add ros.h include to transform_broadcaster
+* Add environment variable for arduino location
+* Supported 32bit array lengths in python make_libraries script
+* Contributors: Alan Meekins, David Lavoie-Boutin
+
+0.7.1 (2015-07-06)
+------------------
+* Provide option to pass through CMake arguments in the CMAKE_COMMAND
+  invocation. The use-case is primarily specifying additional paths to
+  modules, for separately-packaged libraries.
+* Contributors: Mike Purvis
+
+0.7.0 (2015-04-23)
+------------------
+* Initial release for Jade.
+* Make message generating error message more verbose.
 * Fix initializer for fixed-length arrays.
 * Generate constructors for messages.
-* Switch to stdint integers; this allows the client to run on 64-bit systems.
-* Contributors: Mickaël, Mike Purvis, chuck-h
+* Switch to stdint integers. This allows the client to run on 64-bit systems.
+* Contributors: Mickaël, Mike Purvis, Mitchell Wills, chuck-h
 
 0.6.3 (2014-11-05)
 ------------------
