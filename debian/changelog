@@ -1,0 +1,8 @@
+ros-kinetic-rosserial-tivac (0.7.2-0xenial) xenial; urgency=high
+
+  * rosserial package for TivaC Launchpad boards.
+  * Contributors: Vitor Matos
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Fri, 15 Jul 2016 04:00:00 -0000
+
+
