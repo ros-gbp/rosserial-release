@@ -1,0 +1,12 @@
+Source: ros-kinetic-rosserial-msgs
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-message-generation
+Homepage: http://ros.org/wiki/rosserial_msgs
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rosserial-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-message-runtime
+Description: Messages for automatic topic configuration using rosserial.
