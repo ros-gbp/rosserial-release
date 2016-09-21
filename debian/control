@@ -1,0 +1,12 @@
+Source: ros-kinetic-rosserial-arduino
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-message-generation
+Homepage: http://ros.org/wiki/rosserial_arduino
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rosserial-arduino
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, arduino-core, ros-kinetic-message-runtime, ros-kinetic-rospy, ros-kinetic-rosserial-client, ros-kinetic-rosserial-msgs
+Description: Libraries and examples for ROSserial usage on Arduino/AVR Platforms.
