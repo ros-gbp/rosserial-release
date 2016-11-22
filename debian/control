@@ -1,0 +1,13 @@
+Source: ros-jade-rosserial-xbee
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://ros.org/wiki/rosserial_xbee
+Standards-Version: 3.9.2
+
+Package: ros-jade-rosserial-xbee
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-serial, ros-jade-diagnostic-msgs, ros-jade-rospy, ros-jade-rosserial-msgs, ros-jade-rosserial-python
+Description: rosserial_xbee provides tools to do point to multipoint communication between rosserial nodes connected to an xbee.
+ All of the nodes communicate back to a master xbee connected to a computer running ROS. This software currently only works with Series 1 Xbees. This pkg includes python code from the python-xbee project: http://code.google.com/p/python-xbee/
