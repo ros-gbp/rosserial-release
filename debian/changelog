@@ -1,0 +1,26 @@
+ros-kinetic-rosserial-tivac (0.7.5-0jessie) jessie; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Tue, 22 Nov 2016 05:00:00 -0000
+
+ros-kinetic-rosserial-tivac (0.7.4-0jessie) jessie; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Wed, 21 Sep 2016 04:00:00 -0000
+
+ros-kinetic-rosserial-tivac (0.7.3-0jessie) jessie; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Fri, 05 Aug 2016 04:00:00 -0000
+
+ros-kinetic-rosserial-tivac (0.7.2-0jessie) jessie; urgency=high
+
+  * rosserial package for TivaC Launchpad boards.
+  * Contributors: Vitor Matos
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Fri, 15 Jul 2016 04:00:00 -0000
+
+
