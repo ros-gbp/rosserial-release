@@ -1,3 +1,38 @@
+## rosserial (jade) - 0.7.5-0
+
+The packages in the `rosserial` repository were released into the `jade` distro by running `/usr/local/bin/bloom-release -r jade -t jade rosserial` on `Tue, 22 Nov 2016 19:21:01 -0000`
+
+These packages were released:
+- `rosserial`
+- `rosserial_arduino`
+- `rosserial_client`
+- `rosserial_embeddedlinux`
+- `rosserial_mbed`
+- `rosserial_msgs`
+- `rosserial_python`
+- `rosserial_server`
+- `rosserial_test`
+- `rosserial_tivac`
+- `rosserial_windows`
+- `rosserial_xbee`
+
+Version of package(s) in repository `rosserial`:
+
+- upstream repository: https://github.com/ros-drivers/rosserial.git
+- release repository: https://github.com/ros-gbp/rosserial-release.git
+- rosdistro version: `0.7.4-0`
+- old version: `0.7.4-0`
+- new version: `0.7.5-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## rosserial (kinetic) - 0.7.4-0
 
 The packages in the `rosserial` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release -r kinetic -t kinetic rosserial` on `Wed, 21 Sep 2016 14:11:07 -0000`
