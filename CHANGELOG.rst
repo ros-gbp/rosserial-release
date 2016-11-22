@@ -2,6 +2,11 @@
 Changelog for package rosserial_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.5 (2016-11-22)
+------------------
+* Fixing build errors for boost >=1.60 (`#226 <https://github.com/ros-drivers/rosserial/issues/226>`_) (`#250 <https://github.com/ros-drivers/rosserial/issues/250>`_)
+* Contributors: Malte Splietker
+
 0.7.4 (2016-09-21)
 ------------------
 * Use catkin_EXPORTED_TARGETS to avoid CMake warning (`#246 <https://github.com/ros-drivers/rosserial/issues/246>`_)
