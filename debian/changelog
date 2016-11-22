@@ -1,8 +1,0 @@
-ros-kinetic-rosserial-test (0.7.4-0jessie) jessie; urgency=high
-
-  * Integration tests for rosserial (#243 <https://github.com/ros-drivers/rosserial/issues/243>)
-  * Contributors: Mike Purvis
-
- -- Mike Purvis <mpurvis@clearpath.ai>  Wed, 21 Sep 2016 04:00:00 -0000
-
-
