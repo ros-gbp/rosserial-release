@@ -2,6 +2,11 @@
 Changelog for package rosserial_python
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.6 (2017-03-01)
+------------------
+* Fix typo in serial error message (`#253 <https://github.com/ros-drivers/rosserial/issues/253>`_)
+* Contributors: Jonathan Binney
+
 0.7.5 (2016-11-22)
 ------------------
 
