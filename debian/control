@@ -1,0 +1,12 @@
+Source: ros-jade-rosserial
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://ros.org/wiki/rosserial
+Standards-Version: 3.9.2
+
+Package: ros-jade-rosserial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-rosserial-client, ros-jade-rosserial-msgs, ros-jade-rosserial-python
+Description: Metapackage for core of rosserial.
