@@ -1,0 +1,12 @@
+Source: ros-kinetic-rosserial-client
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-rosserial-msgs
+Homepage: http://ros.org/wiki/rosserial_client
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rosserial-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-rosbash, ros-kinetic-rospy, ros-kinetic-rosserial-msgs, ros-kinetic-std-msgs, ros-kinetic-tf
+Description: Generalized client side source for rosserial.
