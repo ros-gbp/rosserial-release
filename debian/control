@@ -1,0 +1,12 @@
+Source: ros-jade-rosserial-embeddedlinux
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-geometry-msgs, ros-jade-nav-msgs, ros-jade-rosserial-client, ros-jade-sensor-msgs, ros-jade-std-msgs
+Homepage: http://ros.org/wiki/rosserial_embeddedlinux
+Standards-Version: 3.9.2
+
+Package: ros-jade-rosserial-embeddedlinux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-rospy, ros-jade-rosserial-msgs
+Description: Libraries and examples for ROSserial usage on Embedded Linux Enviroments
