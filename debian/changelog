@@ -1,0 +1,163 @@
+ros-kinetic-rosserial-embeddedlinux (0.7.7-0xenial) xenial; urgency=high
+
+  * Copy src/examples to install dir so make_libraries.py doesn't fail (#336 <https://github.com/ros-drivers/rosserial/issues/336>)
+  * Fix catkin lint errors (#296 <https://github.com/ros-drivers/rosserial/issues/296>)
+  * Contributors: Bei Chen Liu, Jonny Dark
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 29 Nov 2017 05:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.6-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 01 Mar 2017 05:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.5-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 22 Nov 2016 05:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.4-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 21 Sep 2016 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.3-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Fri, 05 Aug 2016 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.2-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Fri, 15 Jul 2016 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.1-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Mon, 06 Jul 2015 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.7.0-0xenial) xenial; urgency=high
+
+  * Use native 64-bit double on embeddedlinux.
+  * Include time.h header for linux in embedded_linux_hardware.h.
+  * Support OS X time in the embeddedlinux port.
+  * Contributors: Mike Purvis
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Thu, 23 Apr 2015 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.6.3-0xenial) xenial; urgency=high
+
+  * Miscellaneous tidying in EmbeddedLinuxHardware.
+  * Rename header.
+  * Automatic astyle fixes.
+  * portName as const char*, eliminate strtok.
+  * Contributors: Mike Purvis
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 05 Nov 2014 05:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.6.2-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 10 Sep 2014 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.6.1-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Mon, 30 Jun 2014 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.6.0-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 11 Jun 2014 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.5.6-0xenial) xenial; urgency=high
+
+  * Add Mike Purvis as maintainer to all but xbee.
+  * Contributors: Mike Purvis
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 11 Jun 2014 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.5.5-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 14 Jan 2014 05:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.5.4-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Thu, 17 Oct 2013 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.5.3-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Sat, 21 Sep 2013 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.5.2-0xenial) xenial; urgency=high
+
+  * Fix release version
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 17 Jul 2013 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.5.1-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Mon, 15 Jul 2013 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.4.5-0xenial) xenial; urgency=high
+
+  * rosserial_embeddedlinux: Fix CMakeLists.txt ...
+    so 'catkin_make install' can find 'examples' directory under 'src' directory in rosserial_embeddedlinux
+  * fix install rule for examples dir
+  * Fixed a bug in ros_lib install logic which took an exception because it copied files to themselves
+    Added execute permission to make_libraries.py in rosserial_embeddedlinux
+    Moved examples under src in rosserial_embeddedlinux
+  * fix package name
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 02 Jul 2013 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.4.4-0xenial) xenial; urgency=high
+
+  * merge
+  * Merge remote-tracking branch 'origin/groovy-devel' into groovy-devel
+  * Install examples in install dir & next to ros_lib. Change maintainer email.
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 20 Mar 2013 04:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.4.3-0xenial) xenial; urgency=high
+
+  * forgot to remove install directives
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 13 Mar 2013 18:08:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.4.2-0xenial) xenial; urgency=high
+
+  * fix build issues when in isolation by moving more stuff into make_library
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 13 Mar 2013 05:15:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.4.1-0xenial) xenial; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Sat, 09 Mar 2013 05:00:00 -0000
+
+ros-kinetic-rosserial-embeddedlinux (0.4.0-0xenial) xenial; urgency=high
+
+  * initial catkin version on github
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Fri, 08 Mar 2013 05:00:00 -0000
+
+
