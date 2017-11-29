@@ -1,0 +1,12 @@
+Source: ros-kinetic-rosserial-tivac
+Section: misc
+Priority: extra
+Maintainer: Vitor Matos <vmatos@robosavvy.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://wiki.ros.org/rosserial_tivac
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rosserial-tivac
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-rosserial-client, ros-kinetic-rosserial-msgs
+Description: rosserial for TivaC Launchpad evaluation boards.
