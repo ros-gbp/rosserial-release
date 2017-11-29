@@ -1,0 +1,13 @@
+Source: ros-kinetic-rosserial-xbee
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/rosserial_xbee
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rosserial-xbee
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-serial, ros-kinetic-diagnostic-msgs, ros-kinetic-rospy, ros-kinetic-rosserial-msgs, ros-kinetic-rosserial-python
+Description: Allows multipoint communication between rosserial nodes connected to an xbee.
+ All nodes communicate back to a master xbee connected to a computer running ROS. This software currently only works with Series 1 Xbees. This pkg includes python code from the python-xbee project: http://code.google.com/p/python-xbee/
