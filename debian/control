@@ -1,0 +1,12 @@
+Source: ros-jade-rosserial-windows
+Section: misc
+Priority: extra
+Maintainer: Kareem Shehata <kshehata@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-geometry-msgs, ros-jade-nav-msgs, ros-jade-rosserial-client, ros-jade-sensor-msgs, ros-jade-std-msgs
+Homepage: http://ros.org/wiki/rosserial_windows
+Standards-Version: 3.9.2
+
+Package: ros-jade-rosserial-windows
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-message-runtime, ros-jade-rospy, ros-jade-rosserial-client, ros-jade-rosserial-msgs
+Description: rosserial for Windows platforms.
