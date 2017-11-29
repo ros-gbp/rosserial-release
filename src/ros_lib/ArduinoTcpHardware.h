@@ -1,4 +1,4 @@
-/* 
+/*
  * Software License Agreement (BSD License)
  *
  * Copyright (c) 2011, Willow Garage, Inc.
@@ -32,36 +32,73 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _ROS_H_
-#define _ROS_H_
+#ifndef ROS_ARDUINO_TCP_HARDWARE_H_
+#define ROS_ARDUINO_TCP_HARDWARE_H_
 
-#include "ros/node_handle.h"
-
-#if defined(ESP8266) or defined(ROSSERIAL_ARDUINO_TCP)
-  #include "ArduinoTcpHardware.h"
+#include <Arduino.h>
+#if defined(ESP8266)
+  #include <ESP8266WiFi.h>
 #else
-  #include "ArduinoHardware.h"
+  #include <SPI.h>
+  #include <Ethernet.h>
 #endif
 
-namespace ros
-{
-#if defined(__AVR_ATmega8__) or defined(__AVR_ATmega168__)
-  /* downsize our buffers */
-  typedef NodeHandle_<ArduinoHardware, 6, 6, 150, 150> NodeHandle;
+class ArduinoHardware {
+public:
+  ArduinoHardware()
+  {
+  }
 
-#elif defined(__AVR_ATmega328P__)
+  void setConnection(IPAddress &server, int port = 11411)
+  {
+    server_ = server;
+    serverPort_ = port;
+  }
 
-  typedef NodeHandle_<ArduinoHardware, 25, 25, 280, 280> NodeHandle;
-
-#elif defined(SPARK)
-
-  typedef NodeHandle_<ArduinoHardware, 10, 10, 2048, 2048> NodeHandle;
-
+  IPAddress getLocalIP()
+  {
+#if defined(ESP8266)
+    return tcp_.localIP();
 #else
+    return Ethernet.localIP();
+#endif
+  }
 
-  typedef NodeHandle_<ArduinoHardware> NodeHandle; // default 25, 25, 512, 512
+  void init()
+  {
+    tcp_.connect(server_, serverPort_);
+  }
 
-#endif   
-}
+  int read(){
+    if (tcp_.connected())
+    {
+        return tcp_.read();
+    }
+    else
+    {
+      tcp_.connect(server_, serverPort_);
+    }
+    return -1;
+  }
+
+  void write(const uint8_t* data, int length)
+  {
+    tcp_.write(data, length);
+  }
+
+  unsigned long time()
+  {
+    return millis();
+  }
+
+protected:
+#if defined(ESP8266)
+  WiFiClient tcp_;
+#else
+  EthernetClient tcp_;
+#endif
+  IPAddress server_;
+  uint16_t serverPort_ = 11411;
+};
 
 #endif
