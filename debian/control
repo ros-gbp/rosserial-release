@@ -1,0 +1,12 @@
+Source: ros-lunar-rosserial-mbed
+Section: misc
+Priority: extra
+Maintainer: Gary Servin <garyservin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-message-generation
+Homepage: http://ros.org/wiki/rosserial_mbed
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rosserial-mbed
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-message-runtime, ros-lunar-rospy, ros-lunar-rosserial-client, ros-lunar-rosserial-msgs
+Description: rosserial for mbed platforms.
