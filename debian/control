@@ -1,0 +1,12 @@
+Source: ros-lunar-rosserial-server
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-roscpp, ros-lunar-rosserial-msgs, ros-lunar-std-msgs, ros-lunar-topic-tools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rosserial-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-roscpp, ros-lunar-rosserial-msgs, ros-lunar-rosserial-python, ros-lunar-std-msgs, ros-lunar-topic-tools
+Description: A more performance- and stability-oriented server alternative implemented in C++ to rosserial_python.
