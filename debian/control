@@ -1,0 +1,12 @@
+Source: ros-lunar-rosserial-arduino
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-message-generation
+Homepage: http://ros.org/wiki/rosserial_arduino
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rosserial-arduino
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, arduino-core, ros-lunar-message-runtime, ros-lunar-rospy, ros-lunar-rosserial-client, ros-lunar-rosserial-msgs
+Description: rosserial for Arduino/AVR platforms.
