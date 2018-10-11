@@ -1,0 +1,34 @@
+ros-melodic-rosserial-test (0.8.0-0stretch) stretch; urgency=high
+
+
+
+ -- Mike Purvis <mpurvis@clearpath.ai>  Thu, 11 Oct 2018 04:00:00 -0000
+
+ros-melodic-rosserial-test (0.7.7-0stretch) stretch; urgency=high
+
+  * Fix catkin lint errors (#296 <https://github.com/ros-drivers/rosserial/issues/296>)
+  * pyserial bug workaround to fix rosserial_test test against SerialClient.py (#313 <https://github.com/ros-drivers/rosserial/issues/313>)
+  * Contributors: Bei Chen Liu, Tom O'Connell
+
+ -- Mike Purvis <mpurvis@clearpath.ai>  Wed, 29 Nov 2017 05:00:00 -0000
+
+ros-melodic-rosserial-test (0.7.6-0stretch) stretch; urgency=high
+
+
+
+ -- Mike Purvis <mpurvis@clearpath.ai>  Wed, 01 Mar 2017 05:00:00 -0000
+
+ros-melodic-rosserial-test (0.7.5-0stretch) stretch; urgency=high
+
+
+
+ -- Mike Purvis <mpurvis@clearpath.ai>  Tue, 22 Nov 2016 05:00:00 -0000
+
+ros-melodic-rosserial-test (0.7.4-0stretch) stretch; urgency=high
+
+  * Integration tests for rosserial (#243 <https://github.com/ros-drivers/rosserial/issues/243>)
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpath.ai>  Wed, 21 Sep 2016 04:00:00 -0000
+
+
