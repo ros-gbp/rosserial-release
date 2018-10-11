@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial-embeddedlinux
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-rosserial-client
+Homepage: http://ros.org/wiki/rosserial_embeddedlinux
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial-embeddedlinux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-rospy, ros-melodic-rosserial-msgs
+Description: rosserial for embedded Linux enviroments
