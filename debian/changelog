@@ -1,0 +1,49 @@
+ros-melodic-rosserial-mbed (0.8.0-0stretch) stretch; urgency=high
+
+  * Use the ! prefix introduced in gcc4mbed for mbed examples (#304 <https://github.com/ros-drivers/rosserial/issues/304>)
+    Follows the changes introduced in the following commit:
+    https://github.com/adamgreen/gcc4mbed/commit/7d79ef307e65f4f913bed655c887a632352c286c
+    Refer to adamgreen/gcc4mbed#64 <https://github.com/adamgreen/gcc4mbed/issues/64> for more details.
+  * Contributors: Naoki Mizuno
+
+ -- Gary Servin <garyservin@gmail.com>  Thu, 11 Oct 2018 04:00:00 -0000
+
+ros-melodic-rosserial-mbed (0.7.7-0stretch) stretch; urgency=high
+
+  * Fix catkin lint errors (#296 <https://github.com/ros-drivers/rosserial/issues/296>)
+  * Contributors: Bei Chen Liu
+
+ -- Gary Servin <garyservin@gmail.com>  Wed, 29 Nov 2017 05:00:00 -0000
+
+ros-melodic-rosserial-mbed (0.7.6-0stretch) stretch; urgency=high
+
+
+
+ -- Gary Servin <garyservin@gmail.com>  Wed, 01 Mar 2017 05:00:00 -0000
+
+ros-melodic-rosserial-mbed (0.7.5-0stretch) stretch; urgency=high
+
+
+
+ -- Gary Servin <garyservin@gmail.com>  Tue, 22 Nov 2016 05:00:00 -0000
+
+ros-melodic-rosserial-mbed (0.7.4-0stretch) stretch; urgency=high
+
+
+
+ -- Gary Servin <garyservin@gmail.com>  Wed, 21 Sep 2016 04:00:00 -0000
+
+ros-melodic-rosserial-mbed (0.7.3-0stretch) stretch; urgency=high
+
+
+
+ -- Gary Servin <garyservin@gmail.com>  Fri, 05 Aug 2016 04:00:00 -0000
+
+ros-melodic-rosserial-mbed (0.7.2-0stretch) stretch; urgency=high
+
+  * Add initial rosserial_mbed package.
+  * Contributors: Gary Servin, Romain Reignier
+
+ -- Gary Servin <garyservin@gmail.com>  Fri, 15 Jul 2016 04:00:00 -0000
+
+
