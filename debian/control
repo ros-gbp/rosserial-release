@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial-python
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/rosserial_python
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial-python
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-serial, ros-melodic-diagnostic-msgs, ros-melodic-rospy, ros-melodic-rosserial-msgs
+Description: A Python-based implementation of the rosserial protocol.
