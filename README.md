@@ -1,3 +1,40 @@
+## rosserial (melodic) - 0.8.0-0
+
+The packages in the `rosserial` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -t melodic -r melodic rosserial` on `Thu, 11 Oct 2018 23:32:15 -0000`
+
+These packages were released:
+- `rosserial`
+- `rosserial_arduino`
+- `rosserial_client`
+- `rosserial_embeddedlinux`
+- `rosserial_mbed`
+- `rosserial_msgs`
+- `rosserial_python`
+- `rosserial_server`
+- `rosserial_test`
+- `rosserial_tivac`
+- `rosserial_vex_cortex`
+- `rosserial_vex_v5`
+- `rosserial_windows`
+- `rosserial_xbee`
+
+Version of package(s) in repository `rosserial`:
+
+- upstream repository: https://github.com/ros-drivers/rosserial.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.8.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## rosserial (lunar) - 0.7.7-0
 
 The packages in the `rosserial` repository were released into the `lunar` distro by running `/usr/local/bin/bloom-release -t lunar -r lunar rosserial` on `Thu, 30 Nov 2017 00:56:33 -0000`
