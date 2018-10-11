@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial
+Section: misc
+Priority: extra
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/rosserial
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-rosserial-client, ros-melodic-rosserial-msgs, ros-melodic-rosserial-python
+Description: Metapackage for core of rosserial.
