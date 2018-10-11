@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial-windows
+Section: misc
+Priority: extra
+Maintainer: Kareem Shehata <kshehata@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-nav-msgs, ros-melodic-rosserial-client, ros-melodic-sensor-msgs, ros-melodic-std-msgs
+Homepage: http://ros.org/wiki/rosserial_windows
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial-windows
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-message-runtime, ros-melodic-rospy, ros-melodic-rosserial-client, ros-melodic-rosserial-msgs
+Description: rosserial for Windows platforms.
