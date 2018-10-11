@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial-tivac
+Section: misc
+Priority: extra
+Maintainer: Vitor Matos <vmatos@robosavvy.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://wiki.ros.org/rosserial_tivac
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial-tivac
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-rosserial-client, ros-melodic-rosserial-msgs
+Description: rosserial for TivaC Launchpad evaluation boards.
