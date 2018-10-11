@@ -1,0 +1,9 @@
+ros-melodic-rosserial-vex-cortex (0.8.0-0bionic) bionic; urgency=high
+
+  * VEX Cortex Usage improvements and VEX V5 Support (#385 <https://github.com/ros-drivers/rosserial/issues/385>)
+  * Re-attempting rosserial for VEX Cortex (#380 <https://github.com/ros-drivers/rosserial/issues/380>)
+  * Contributors: CanyonTurtle
+
+ -- Canyon Turtle <canyonturtle@gmail.com>  Thu, 11 Oct 2018 04:00:00 -0000
+
+
