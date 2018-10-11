@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial-server
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-roscpp, ros-melodic-rosserial-msgs, ros-melodic-std-msgs, ros-melodic-topic-tools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-roscpp, ros-melodic-rosserial-msgs, ros-melodic-rosserial-python, ros-melodic-std-msgs, ros-melodic-topic-tools
+Description: A more performance- and stability-oriented server alternative implemented in C++ to rosserial_python.
