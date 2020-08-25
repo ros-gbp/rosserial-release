@@ -1,3 +1,43 @@
+## rosserial (noetic) - 0.9.0-1
+
+The packages in the `rosserial` repository were released into the `noetic` distro by running `/home/administrator/bloom_env/bin/bloom-release rosserial -r noetic` on `Tue, 25 Aug 2020 23:45:08 -0000`
+
+These packages were released:
+- `rosserial`
+- `rosserial_arduino`
+- `rosserial_chibios`
+- `rosserial_client`
+- `rosserial_embeddedlinux`
+- `rosserial_mbed`
+- `rosserial_msgs`
+- `rosserial_python`
+- `rosserial_server`
+- `rosserial_tivac`
+- `rosserial_vex_cortex`
+- `rosserial_vex_v5`
+- `rosserial_windows`
+- `rosserial_xbee`
+
+These packages were explicitly ignored:
+- `rosserial_test`
+
+Version of package(s) in repository `rosserial`:
+
+- upstream repository: https://github.com/ros-drivers/rosserial.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.9.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## rosserial (melodic) - 0.8.0-0
 
 The packages in the `rosserial` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -t melodic -r melodic rosserial` on `Thu, 11 Oct 2018 23:32:15 -0000`
