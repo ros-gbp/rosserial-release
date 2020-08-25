@@ -1,0 +1,56 @@
+ros-noetic-rosserial-tivac (0.9.0-1buster) buster; urgency=high
+
+  * Use os.path.join for path concatenation (#495 <https://github.com/ros-drivers/rosserial/issues/495>)
+  * Fix Travis for Noetic + Python 3
+  * Bump minimum CMake version to 3.7.2 (Melodic).
+  * Contributors: Hermann von Kleist, Mike Purvis
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Tue, 25 Aug 2020 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.8.0-1buster) buster; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Thu, 11 Oct 2018 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.7.7-1buster) buster; urgency=high
+
+  * Fix catkin lint errors (#296 <https://github.com/ros-drivers/rosserial/issues/296>)
+  * Contributors: Bei Chen Liu
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Wed, 29 Nov 2017 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.7.6-1buster) buster; urgency=high
+
+  * Allows to specify chip's silicon revision for TivaWare. (#268 <https://github.com/ros-drivers/rosserial/issues/268>)
+  * Updating rosserial_tivac for new TivaWare compilation flags (#260 <https://github.com/ros-drivers/rosserial/issues/260>)
+  * Contributors: Vitor Matos
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Wed, 01 Mar 2017 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.7.5-1buster) buster; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Tue, 22 Nov 2016 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.7.4-1buster) buster; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Wed, 21 Sep 2016 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.7.3-1buster) buster; urgency=high
+
+
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Fri, 05 Aug 2016 00:00:00 -0000
+
+ros-noetic-rosserial-tivac (0.7.2-1buster) buster; urgency=high
+
+  * rosserial package for TivaC Launchpad boards.
+  * Contributors: Vitor Matos
+
+ -- Vitor Matos <vmatos@robosavvy.com>  Fri, 15 Jul 2016 00:00:00 -0000
+
+
