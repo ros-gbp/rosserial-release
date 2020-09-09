@@ -2,6 +2,11 @@
 Changelog for package rosserial_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.1 (2020-09-09)
+------------------
+* Add boost::thread dependency to rosserial_server (`#513 <https://github.com/ros-drivers/rosserial/issues/513>`_)
+* Contributors: Mike Purvis
+
 0.9.0 (2020-08-25)
 ------------------
 * Only initialize embedded python interpreter once. (`#491 <https://github.com/ros-drivers/rosserial/issues/491>`_)
