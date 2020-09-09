@@ -1,0 +1,169 @@
+ros-noetic-rosserial-xbee (0.9.1-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 09 Sep 2020 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.9.0-1buster) buster; urgency=high
+
+  * Fix Travis for Noetic + Python 3
+  * Bump minimum CMake version to 3.7.2 (Melodic).
+  * Update pyserial rosdep.
+  * Fix py3 print usages and trailing whitespaces (#469 <https://github.com/ros-drivers/rosserial/issues/469>)
+  * Contributors: Mike Purvis, acxz
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 25 Aug 2020 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.8.0-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Thu, 11 Oct 2018 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.7-1buster) buster; urgency=high
+
+  * Fix catkin lint errors (#296 <https://github.com/ros-drivers/rosserial/issues/296>)
+  * Contributors: Bei Chen Liu
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 29 Nov 2017 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.6-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 01 Mar 2017 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.5-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 22 Nov 2016 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.4-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 21 Sep 2016 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.3-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Fri, 05 Aug 2016 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.2-1buster) buster; urgency=high
+
+  * Adding inWaiting method to FakeSerial class. Fixing issue #179 <https://github.com/ros-drivers/rosserial/issues/179>
+  * Contributors: Lucas
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Fri, 15 Jul 2016 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.1-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Mon, 06 Jul 2015 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.7.0-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Thu, 23 Apr 2015 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.6.3-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.6.2-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 10 Sep 2014 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.6.1-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Mon, 30 Jun 2014 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.6.0-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 11 Jun 2014 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.5.6-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 11 Jun 2014 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.5.5-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 14 Jan 2014 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.5.4-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Thu, 17 Oct 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.5.3-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Sat, 21 Sep 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.5.2-1buster) buster; urgency=high
+
+  * Fix release version
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 17 Jul 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.5.1-1buster) buster; urgency=high
+
+  * manually merge #53 <https://github.com/ros-drivers/rosserial/issues/53>, revive catkinized rosserial_xbee
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Mon, 15 Jul 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.4.5-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Tue, 02 Jul 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.4.4-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 20 Mar 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.4.3-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 13 Mar 2013 14:08:00 -0000
+
+ros-noetic-rosserial-xbee (0.4.2-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Wed, 13 Mar 2013 01:15:00 -0000
+
+ros-noetic-rosserial-xbee (0.4.1-1buster) buster; urgency=high
+
+
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Sat, 09 Mar 2013 00:00:00 -0000
+
+ros-noetic-rosserial-xbee (0.4.0-1buster) buster; urgency=high
+
+  * moving rosserial_xbee to rosserial-experimental repo
+
+ -- Paul Bouchier <paul.bouchier@gmail.com>  Fri, 08 Mar 2013 00:00:00 -0000
+
+
