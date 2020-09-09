@@ -1,0 +1,12 @@
+Source: ros-noetic-rosserial-client
+Section: misc
+Priority: optional
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-rosserial-msgs, ros-noetic-rosunit
+Homepage: http://ros.org/wiki/rosserial_client
+Standards-Version: 3.9.2
+
+Package: ros-noetic-rosserial-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-rosbash, ros-noetic-rospy, ros-noetic-rosserial-msgs, ros-noetic-std-msgs, ros-noetic-tf
+Description: Generalized client side source for rosserial.
