@@ -2,6 +2,11 @@
 Changelog for package rosserial_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.2 (2021-04-02)
+------------------
+* Add python3-dev as build depend (`#544 <https://github.com/ros-drivers/rosserial/issues/544>`_)
+* Contributors: Tobias Fischer
+
 0.9.1 (2020-09-09)
 ------------------
 * Add boost::thread dependency to rosserial_server (`#513 <https://github.com/ros-drivers/rosserial/issues/513>`_)
