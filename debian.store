@@ -1,1 +1,1 @@
-{"base": "f3277353", "parent": "debian/noetic/rosserial_chibios", "previous": "bc1093ae", "trim": "", "trimbase": ""}
+{"base": "c2c0a04e", "parent": "debian/noetic/rosserial_chibios", "previous": "49fc1da3", "trim": "", "trimbase": ""}
